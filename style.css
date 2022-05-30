@@ -1,5 +1,6 @@
 :root {
 	--bg-color: hsl(240, 100%, 5%);
+	--app-bg-color: hsl(0, 0%, 5%)
 }
 
 body {
@@ -20,9 +21,14 @@ body {
 .app {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(50px, 1fr));
+	gap: 5px;
 
 	width: 50%;
 	min-width: 360px;
+	height: 60vh;
+	min-height: 480px;
+
+	background-color: var(--app-bg-color);
 }
 
 .output {
