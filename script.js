@@ -37,6 +37,23 @@ for (let button of appButtons) {
 			return;
 		}
 
+		if (target.classList.contains("negative")) {
+			inverseNumber();
+			updateDisplay();
+			return;
+		}
+
+		if (target.classList.contains("equals")) {
+			performCalculation();
+			updateDisplay();
+			return;
+		}
+
+		if (target.classList.contains("operator")) {
+			handleOperator(target.innerText);
+			return;
+		}
+
 		inputDigit(target.innerText);
 		updateDisplay();
 	});
