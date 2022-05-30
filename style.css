@@ -1,4 +1,10 @@
+:root {
+	--bg-color: hsl(240, 100%, 5%);
+}
+
 body {
+	background-color: var(--bg-color);
+	color: white;
 	font-family: monospace;
 }
 
